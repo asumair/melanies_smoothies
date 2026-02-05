@@ -8,7 +8,8 @@ st.write(
   """Choose the fruits you want in your custom smoothies!
   """
 )
-
+cnx = st.connection("snowflake")
+session = cnx.session()
 
 
 name_on_order = st.text_input("Name on Smoothies:")
